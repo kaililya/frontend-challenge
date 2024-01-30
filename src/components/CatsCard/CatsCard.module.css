@@ -1,0 +1,36 @@
+.image_wapper {
+  height: 225px;
+  width: 225px;
+  position: relative;
+  transition: box-shadow .2s ease , transform .4s ease;
+
+}
+
+.image_wapper:hover {
+  box-shadow: 0 9px 9px rgba(0, 0, 0, 0.18), 0 6px 2.5px rgba(0, 0, 0, 0.24);
+  transform: scale(1.138);
+}
+
+.image_wapper:hover .heart_icon {
+  display: block;
+}
+
+/* .image_wapper:hover svg {
+  display: block;
+} */
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.heart_icon {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+}
+.heart_icon__clicked {
+  display: block;
+}

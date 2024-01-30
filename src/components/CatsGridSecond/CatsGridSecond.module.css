@@ -1,0 +1,60 @@
+@keyframes redBorderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.main_container {
+  /* padding: 0 62px; */
+  max-width: 1316px;
+  padding: 0 62px;
+  margin-top: 100px;
+
+}
+
+.cards_container {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 48px;
+}
+
+.title {
+  margin-top: 120px;
+  font-size: 30px;
+  font-family: Roboto;
+}
+
+.image {
+  width: 12vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 2px solid transparent; /* Начальное состояние - без границы */
+  animation: redBorderAnimation 1s infinite; 
+}
+
+.button {
+  font-family: Roboto;
+  background-color: white;
+  text-decoration: none;
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: opacity .2s ease ;
+}
+
+
+.button:hover {
+  opacity: .6;
+}

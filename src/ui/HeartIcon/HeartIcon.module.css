@@ -1,0 +1,7 @@
+.heart_icon {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+}

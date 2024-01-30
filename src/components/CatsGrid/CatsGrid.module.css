@@ -1,0 +1,45 @@
+@keyframes redBorderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.main_container {
+  /* padding: 0 62px; */
+  padding: 0 62px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.cards_container {
+  list-style: none;
+  display: flex;
+  gap: 38px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 48px;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+}
+
+.loader {
+  margin-top: 180px;
+}
+
+.image {
+  width: 12vw;
+  position: fixed;
+  z-index: 4;
+  right: 0;
+  top: 0;
+  border: 2px solid transparent; /* Начальное состояние - без границы */
+  animation: redBorderAnimation .8s infinite; 
+}
